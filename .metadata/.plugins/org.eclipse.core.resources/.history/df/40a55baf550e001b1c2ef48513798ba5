@@ -1,0 +1,24 @@
+package br.com.diegocorp.projetoferiado.model;
+
+import java.time.LocalDate;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity // Aqui eu defino que Agencia será uma entidade armazenável.
+@Table(name="itmn330_feriado") // Aqui eu especifico o nome da tabela correspondente.
+public class Feriado {
+	
+	@Id													// Aqui eu indico que é chave primária.
+	@GeneratedValue(strategy=GenerationType.IDENTITY)	// Aqui eu falo que é AUTO-INCREMENT
+	@Column(name="id_feriado")							// Aqui eu falo o nome da coluna correspondente.
+	private int			id;
+	private String		nome;
+	private LocalDate	dataInicio;
+	private LocalDate	dataFim;
+
+}

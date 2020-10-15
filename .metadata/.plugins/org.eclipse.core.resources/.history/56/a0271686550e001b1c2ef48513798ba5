@@ -1,0 +1,17 @@
+package br.com.diegocorp.projetoferiado.model;
+
+import java.time.LocalDate;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity // Aqui eu defino que Agencia será uma entidade armazenável.
+@Table(name="itmn330_feriado") // Aqui eu especifico o nome da tabela correspondente.
+public class Feriado {
+	
+	
+	private int			id;
+	private String		nome;
+	private LocalDate	dataInicio;
+	private LocalDate	dataFim;
+
+}

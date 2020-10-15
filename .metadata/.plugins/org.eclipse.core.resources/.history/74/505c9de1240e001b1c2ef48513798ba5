@@ -1,0 +1,8 @@
+package br.com.diegocorp.hello.controller;
+
+public class HelloController {
+	public string sayHello() {
+		return "Oi! UFA! Acho que vai!";
+	}
+
+}

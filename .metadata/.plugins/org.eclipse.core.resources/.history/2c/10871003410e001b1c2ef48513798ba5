@@ -1,0 +1,15 @@
+package br.com.diegocorp.projetoferiado.controller;
+
+import java.util.ArrayList;
+
+import br.com.diegocorp.projetoferiado.model.Agencia;
+
+
+public class AgenciaController {
+	
+	// Aqui precisamos criar um método que retorne todas as agências:
+	public ArrayList<Agencia> recuperarTodas(){
+		return null;
+	}
+
+}

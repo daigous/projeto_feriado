@@ -1,0 +1,16 @@
+# Definindo o número da porta do servidor:
+	server.port = 8088
+
+# 4 elementos obrigatórios para a conexão com o banco:
+	# 1. Usuário:
+	sprint.datasource.username = root
+	
+	# 2. Senha:
+	spring.datasource.password = mysqlmysql
+	
+	# 3. url da base de dados:
+	spring.datasource.url = 
+	
+	# 4. dialeto:
+	
+	

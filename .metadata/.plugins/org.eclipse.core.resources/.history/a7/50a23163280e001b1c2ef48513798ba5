@@ -1,0 +1,5 @@
+package br.com.diegocorp.hello.model;
+
+public class Produto {
+
+}

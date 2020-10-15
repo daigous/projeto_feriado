@@ -1,0 +1,24 @@
+package br.com.diegocorp.projetoferiado.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="tbl_usuario")
+public class Usuario {
+	
+	@Id													// Aqui eu indico que é chave primária.
+	@GeneratedValue(strategy=GenerationType.IDENTITY)	// Aqui eu falo que é AUTO-INCREMENT
+	@Column(name="id_agencia")							// Aqui eu falo o nome da coluna correspondente.
+	private int		id;
+	private String	racf;
+	private String	funcional;
+	private String	nome;
+	private String	email;
+	private String	linkFoto;
+
+}

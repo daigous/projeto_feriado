@@ -33,7 +33,7 @@ function carregainfocadastro(){
 
 function preencheComboBox(lista){
 
-    var txtCombo = `<select id="txtAgencia" class="form-control">`;
+    var txtCombo = `<select id="txtAgencia" class="form-control" onfocus="limpaAlerta()">`;
 
     for (i=0; i<lista.length; i++){
         var agencia = lista[i];
@@ -48,6 +48,11 @@ function cadastrarFeriado(){
     var txtNome    = document.getElementById("txtNome").value;
     var txtDataIni = document.getElementById("txtDataInicial").value;
     var txtDataFim = document.getElementById("txtDataFim").value;
+
+    if(!(txtAgencia && txtNome && txtDataIni && txtDataFim)){
+        document.getElementById("alertaCadastro").innerHTML = `<br><div class="alert alert-danger" role="alert">Por favor, preencha todos os campos.</div>`;
+        return;
+    }
 
     var msgBody = {
         nome : txtNome,
@@ -101,4 +106,8 @@ function carregainfo(){
     document.getElementById("fotoUser").innerHTML = imgUser;
     document.getElementById("infoUser").innerHTML = infoUser;
 
+}
+
+function limpaAlerta(){
+    document.getElementById("alertaCadastro").innerHTML = "";
 }

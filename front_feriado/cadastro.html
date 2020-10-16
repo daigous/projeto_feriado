@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="cadastro.css">
     <script type="text/javascript" src="cadastro.js"></script>
     <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light" style="margin-bottom: 15px;">
-        <a class="navbar-brand" href="selecao.html">
+    <nav class="navbar navbar-light" style="background-color: #FF6600;">
+        <a class="navbar-brand" href="index.html" style="font-family: 'Itau Display';">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banco_Ita%C3%BA_logo.svg/1200px-Banco_Ita%C3%BA_logo.svg.png"
                 width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-            ItauMon
+            <b>ItauMon</b>
         </a>
     </nav>
     <nav aria-label="breadcrumb">
@@ -26,7 +26,7 @@
 </head>
 
 <body onload="carregainfocadastro()">
-    <div class="container-fluid">
+    <div class="container-fluid" style="font-family: 'Itau Display'; color: #828282;">
         <div class="row">
             <div class="col-3">
                 <div class="col-12" id="fotoUser"
@@ -38,7 +38,7 @@
                 </div>
                 <div class="col-12">
                     <br>
-                    <button class="btn btn-primary" onclick="logout()">Logout</button>
+                    <button class="btn btn-primary" style="background-color: #1a3399;" onclick="logout()">Logout</button>
                 </div>
             </div>
 
@@ -64,30 +64,33 @@
                         <div class="col-12">
                             <div class="form-group">
                                 <label for="txtNome">Nome do Feriado</label>
-                                <input type="text" class="form-control" id="txtNome" maxlength="50">
+                                <input type="text" class="form-control" id="txtNome" maxlength="50" onfocus="limpaAlerta()">
                             </div>
                         </div>
                     </div>
-
-
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="txtDataInicial">Data Inicial</label>
-                                <input type="date" class="form-control" id="txtDataInicial">
+                                <input type="date" class="form-control" id="txtDataInicial" onfocus="limpaAlerta()">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="txtDataFim">Data Final</label>
-                                <input type="date" class="form-control" id="txtDataFim">
+                                <input type="date" class="form-control" id="txtDataFim" onfocus="limpaAlerta()">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button class="btn btn-primary" onclick="cadastrarFeriado()">Cadastrar Novo
+                            <button class="btn btn-primary" style="background-color: #1a3399;" onclick="cadastrarFeriado()">Cadastrar Novo
                                 Feriado</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" id="alertaCadastro">
+
                         </div>
                     </div>
                 </div>

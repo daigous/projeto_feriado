@@ -30,13 +30,13 @@ function trataStatus(res){
         //document.getElementById("resultado").innerHTML = "<h4>Usuario Conectado!</h4>";
     }
     else if (res.status == 404){
-        document.getElementById("resultado").innerHTML = "<h4>Usuario Não Existe</h4>";
+        document.getElementById("resultado").innerHTML = '<br><div class="alert alert-danger" role="alert"><b>Usuário não existe</b></div>';
     }
     else if (res.status == 401){
-        document.getElementById("resultado").innerHTML = "<h4>Senha Inválida</h4>";
+        document.getElementById("resultado").innerHTML = '<br><div class="alert alert-danger" role="alert"><b>Senha inválida</b></div>';
     }
     else{
-        document.getElementById("resultado").innerHTML = "<h4>Erro Desconhecido</h4>";
+        document.getElementById("resultado").innerHTML = '<br><div class="alert alert-danger" role="alert"><b>Erro desconhecido</b></div>';
     }
 }
 

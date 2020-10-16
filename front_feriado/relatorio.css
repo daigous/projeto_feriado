@@ -1,6 +1,16 @@
 .linhaPar{
-    background-color: lightskyblue;
+    background-color: lightgray;
 }
 .linhaImpar{
     background-color: white;
+}
+#opcoes{
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

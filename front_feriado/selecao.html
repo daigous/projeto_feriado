@@ -10,41 +10,65 @@
     <link rel="stylesheet" href="selecao.css">
     <script type="text/javascript" src="selecao.js"></script>
     <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+
+    <nav class="navbar navbar-light bg-light" style="margin-bottom: 15px;">
+        <a class="navbar-brand" href="selecao.html">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banco_Ita%C3%BA_logo.svg/1200px-Banco_Ita%C3%BA_logo.svg.png"
                 width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             ItauMon
         </a>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
 </head>
 
 <body onload="carregainfo()">
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2">
-                <div class="col-12" id="fotoUser">
+            <div class="col-3">
+                <div class="col-12" id="fotoUser"
+                    style="width:200px;height:200px;margin-left: auto; margin-right: auto;">
                     *** aqui vai a foto do nosso usuario ***
                 </div>
                 <div class="col-12" id="infoUser">
                     *** Aqui vao os dados de cadastro do nosso usuario ***
                 </div>
                 <div class="col-12">
+                    <br>
                     <button class="btn btn-primary" onclick="logout()">Logout</button>
                 </div>
             </div>
 
-            <div class="col-10">
+            <div class="col-9">
                 <div class="col-12 text-center">
                     <h3>Sistema de Agendamento de Feriados</h3>
                 </div>
-                <label id="lblEscolha" for="opcoes">Selecione Sua Opção</label>
+                <!--    <label id="lblEscolha" for="opcoes">Selecione Sua Opção</label> -->
                 <div class="row" id="opcoes">
-                    <div class="col-6 text-center">
-                        <a href="cadastro.html" class="btn btn-primary" width="80%">Cadastro</a>
-                    </div>
-                    <div class="col-6 text-center">
-                        <a href="relatorio.html" class="btn btn-primary" width="80%">Relatorio</a>
+                    <div class="card-group text-center align-center" style="margin-left: auto; margin-right: auto;">
+                        <div class="card">
+                            <img src="https://storage.googleapis.com/wp-noticias/2019/10/efe69272-calendar-3906791_960_720.jpg"
+                                class="card-img-top" alt="..." style="width:200px;height:200px;margin-left: auto;
+                                margin-right: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="cadastro.html" class="btn btn-primary"
+                                        width="80%">Cadastro de Feriados</a></h5>
+                                <p class="card-text">Cadastre todos os feriados de sua agência.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://abrigodignaidade.sp.gov.br/images/noticias.png" class="card-img-top"
+                                alt="..." style="width:200px;height:200px;margin-left: auto; margin-right: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="relatorio.html" class="btn btn-primary"
+                                        width="80%">Relatorio de Feriados</a></h5>
+                                <p class="card-text">Consulte todos os feriados de sua agência.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

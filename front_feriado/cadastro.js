@@ -77,10 +77,10 @@ function cadastrarFeriado(){
 
 function trataResultado(res){
     if (res.status == 201) {
-        alert("Feriado Cadastrado com sucesso!");
+        document.getElementById("alertaCadastro").innerHTML = `<br><div class="alert alert-success" role="alert">Feriado cadastrado com sucesso!</div>`;
     }
     else{
-        alert("ERRO ao cadastrar Feriado!");
+        document.getElementById("alertaCadastro").innerHTML = `<br><div class="alert alert-danger" role="alert">Erro ao cadastrar feriado.</div>`;
     }
 }
 
@@ -111,3 +111,4 @@ function carregainfo(){
 function limpaAlerta(){
     document.getElementById("alertaCadastro").innerHTML = "";
 }
+

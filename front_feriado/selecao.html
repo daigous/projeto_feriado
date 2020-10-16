@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +9,48 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="selecao.css">
     <script type="text/javascript" src="selecao.js"></script>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banco_Ita%C3%BA_logo.svg/1200px-Banco_Ita%C3%BA_logo.svg.png"
+                width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            ItauMon
+        </a>
 </head>
-<body>
 
-    <div class="container">
+<body onload="carregainfo()">
+
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12 text-center">
-                <h3>Sistema de Agendamento de Feriados</h3>
+            <div class="col-2">
+                <div class="col-12" id="fotoUser">
+                    *** aqui vai a foto do nosso usuario ***
+                </div>
+                <div class="col-12" id="infoUser">
+                    *** Aqui vao os dados de cadastro do nosso usuario ***
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="logout()">Logout</button>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                *** aqui vai a foto do nosso usuario ***
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                *** Aqui vao os dados de cadastro do nosso usuario ***
+
+            <div class="col-10">
+                <div class="col-12 text-center">
+                    <h3>Sistema de Agendamento de Feriados</h3>
+                </div>
+                <label id="lblEscolha" for="opcoes">Selecione Sua Opção</label>
+                <div class="row" id="opcoes">
+                    <div class="col-6 text-center">
+                        <a href="cadastro.html" class="btn btn-primary" width="80%">Cadastro</a>
+                    </div>
+                    <div class="col-6 text-center">
+                        <a href="relatorio.html" class="btn btn-primary" width="80%">Relatorio</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -37,4 +61,5 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

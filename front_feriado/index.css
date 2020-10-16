@@ -1,3 +1,11 @@
-#resultado{
-    color: red;
+
+#login{
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 1px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

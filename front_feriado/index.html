@@ -8,35 +8,43 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css"> <!-- meu css-->
     <script type="text/javascript" src="index.js"></script> <!-- meu script -->
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banco_Ita%C3%BA_logo.svg/1200px-Banco_Ita%C3%BA_logo.svg.png"
+                width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            ItauMon
+        </a>
 
-    <title>Sistema de Controle de Feriados</title>
+        <title>Sistema de Controle de Feriados</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text">
-                <h3>Sistema de Controle de Feriados</h3>
+    <div class="container-fluid">
+        <br><br><br><br>
+        <div id="login">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>Sistema de Controle de Feriados</h3>
+                </div>
             </div>
-        </div>
 
-        <!-- Aqui vai o Formulário de Login: -->
-        <div class="form-group">
-            <label for="txtLogin">Insira sua racf ou funcional</label>
-            <input type="text" class="form-control" id="txtLogin" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
+            <!-- Aqui vai o Formulário de Login: -->
+            <div class="form-group">
+                <label for="txtLogin">Insira sua racf ou funcional</label>
+                <input type="text" class="form-control" id="txtLogin" aria-describedby="emailHelp">
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>  -->
+            </div>
 
-        <div class="form-group">
-            <label for="txtSenha">Senha</label>
-            <input type="password" class="form-control" id="txtSenha">
-        </div>
+            <div class="form-group">
+                <label for="txtSenha">Senha</label>
+                <input type="password" class="form-control" id="txtSenha">
+            </div>
 
-        <button type="button" class="btn btn-primary" onclick=fazerLogin()>Enviar</button>
-        <!-- Fim do Formulário de Login-->
-        <div class="row">
-            <div class="col-12 text-center" id="resultado">
-                ...
+            <button type="button" class="btn btn-primary" onclick=fazerLogin()>Enviar</button>
+            <!-- Fim do Formulário de Login-->
+            <div class="row">
+                <div class="col-12 text-center" id="resultado"></div>
             </div>
         </div>
     </div>
